@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graded Exercise 4</title>
+</head>
+<body>
+
+    <script>
+
+    var a = prompt("Please enter the length of the first side");
+    var b = prompt("Please enter the length of the second side");
+    var c = prompt("Please enter the length of the third side");
+
+    function determineTriangle(a, b, c)
+
+    {
+        if((a===b &&  b===c && c===a))
+        {
+            window.alert("The triangle is EQUILATERAL.");
+        }
+
+        else if((a===b || b===c || c===a)){
+            window.alert("The triangle is ISOSCELES.");
+        }
+
+        else 
+        {
+            window.alert("The triangle is SCALENE.");
+        }
+    }
+
+    if (isNaN (a)==true || isNaN(b)==true || isNaN(c)==true)
+    {
+        window.alert("INVALID");
+    }
+
+    else
+    {
+        determineTriangle (a,b,c)
+    }
+    
+    </script>
+</body>
+</html>
